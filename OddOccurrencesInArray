@@ -1,0 +1,11 @@
+using System;
+class Solution {
+    public int solution(int[] A) {
+        foreach(int element in A){
+            if(Array.FindAll(A, x => x == element).Length == 1){
+                return element;
+            }
+        }
+        return 42;
+    }
+}
